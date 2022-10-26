@@ -1,0 +1,17 @@
+.dashboard-icon{
+    margin: 0 auto;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: .2;
+    font-weight: 600;
+}
+
+.dashboard-icon svg{
+    margin: 0 auto;
+    min-width: 40vh;
+    min-height: 40vh;
+}

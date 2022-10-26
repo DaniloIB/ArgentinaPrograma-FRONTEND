@@ -1,0 +1,24 @@
+<div class="container my-3">
+    <app-banner></app-banner>
+    <div class="row align-items-center">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-5  text-center">
+            <img src="../../../assets/perfil.png" class="img-fluid rounded-circle mx-auto d-block" alt="">
+            <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+            <p>{{about.titular}}</p>
+            <p>{{persona.pais}} - {{persona.ciudad}}</p>
+        </div>
+
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-7 align-self-center">
+            <div class="col d-flex justify-content-end mx-3" *ngIf="isLogged">
+                <button class="add-button btn btn-link" type="button" routerLink="/editar-perfil/{{about.id}}">
+                    <i class="bi bi-pencil-square"></i>
+                    <p class="m-0">Editar</p>
+                </button>
+            </div>
+            <div class=" about ">
+                <h5>Acerca de mi</h5>
+                <p>{{about.descripcion}}</p>
+            </div>
+        </div>
+    </div>
+</div>

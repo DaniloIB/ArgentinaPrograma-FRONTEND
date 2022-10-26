@@ -1,0 +1,27 @@
+<div class="container my-4 p-5">
+  <h1>Sumar Proyecto</h1>
+  <form class="p-3" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+    <div class="mb-3">
+      <label for="nombreProyecto" class="form-label">Titulo de Proyecto</label>
+      <input type="text" class="form-control" id="nombreProyecto" name="nombreProyecto" [(ngModel)]="nombreProyecto"
+        required>
+    </div>
+
+    <div class="mb-3">
+      <label for="descripcion" class="form-label">Descripcion</label>
+      <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="descripcion" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="urlProyecto" class="form-label">URL del Proyecto</label>
+      <input type="text" class="form-control" id="urlProyecto" name="urlProyecto" [(ngModel)]="urlProyecto" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="urlImg" class="form-label">URL de Imagen</label>
+      <input type="text" class="form-control" id="urlImg" name="urlImg" [(ngModel)]="urlImg" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary my-2">Agregar</button>
+  </form>
+</div>

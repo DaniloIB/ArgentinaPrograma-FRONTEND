@@ -1,0 +1,31 @@
+.container-fluid {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li:hover {
+    background-color: #F5F6FA;
+
+}
+
+ul li a {
+    color: #232946;
+    cursor: pointer;
+
+}
+
+.home {
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 992px) {
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

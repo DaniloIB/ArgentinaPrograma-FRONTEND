@@ -1,0 +1,24 @@
+<div class="container my-4 p-5">
+  <h1>Editar Experiencia</h1>
+  <form class="p-3" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+    <div class="mb-3">
+      <label for="titular" class="form-label">Puesto</label>
+      <input type="text" class="form-control" id="titular" name="titular" [(ngModel)]="about.titular" required>
+    </div>
+    <div class="mb-3">
+      <label for="ciudad" class="form-label">Ciudad</label>
+      <input type="text" class="form-control" id="ciudad" name="ciudad" [(ngModel)]="persona.ciudad" required>
+    </div>
+    <div class="mb-3">
+      <label for="pais" class="form-label">Pais</label>
+      <input type="text" class="form-control" id="pais" name="pais" [(ngModel)]="persona.pais" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="descripcion" class="form-label">Acerca de mí</label>
+      <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="about.descripcion"
+        required>
+    </div>
+    <button type="submit" class="btn btn-primary mt-4">Actualizar</button>
+  </form>
+</div>

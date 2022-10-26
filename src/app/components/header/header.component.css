@@ -1,0 +1,14 @@
+*{
+    max-height: 90px;
+    background-color: #232946;
+    color: #FFFFFE;
+}
+
+.navbar{
+    margin: 0 auto;
+    max-width: 1320px;
+}
+
+button{
+    font-weight: 500;
+}

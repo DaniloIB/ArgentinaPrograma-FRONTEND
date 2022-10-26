@@ -1,0 +1,29 @@
+.container{
+    min-height: 80vh;
+    max-width: 40vw;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.08);
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+form{
+    margin: 0 auto;
+    min-height: 50vh;
+    max-width: 60vw;
+}
+
+textarea{
+    max-height: 200px;
+}
+
+button{
+    width: 100%;
+}
+
+

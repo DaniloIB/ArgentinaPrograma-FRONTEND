@@ -1,0 +1,15 @@
+<div class="container my-4 p-5">
+  <h1>Sumar Skill</h1>
+  <form class="p-3" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+    <div class="mb-3">
+      <label for="nombreSkill" class="form-label">Habilidad | Skill </label>
+      <input type="text" class="form-control" id="nombreSkill" name="nombreSkill" [(ngModel)]="nombreSkill" required>
+    </div>
+    <div class="mb-3">
+      <label for="porcentaje" class="form-label">Porcentaje</label>
+      <input type="number" class="form-control" min="10" max="100" id="porcentaje" name="porcentaje"
+        [(ngModel)]="porcentaje" required>
+    </div>
+    <button type="submit" class="btn btn-primary mt-4">Agregar</button>
+  </form>
+</div>

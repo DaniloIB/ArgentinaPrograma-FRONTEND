@@ -1,0 +1,35 @@
+<div class="container p-5 mb-4">
+    <div class="d-flex justify-content-start">
+        <button class="add-button btn btn-link" *ngIf="isLogged" type="button" routerLink="/nueva-educacion">
+            <i class="bi bi-plus-circle"></i>
+            <p class="m-0">Sumar educación</p>
+        </button>
+    </div>
+
+    <div class="row card p-4 mt-5 flex-row align-items-center justify-content-center "
+        *ngFor="let Educacion of educacion">
+
+        <div class="logo d-flex justify-content-center col-sm-12 col-md-1 col-lg-1">
+            <img class="img-fluid" src="../../../assets/study.png" alt="">
+        </div>
+
+        <!-- title -->
+        <div class="col  d-flex flex-column justify-content-around title-content">
+            <h6 class="title text-uppercase">{{Educacion.nombreEducacion}}</h6>
+            <p class="subtitle">{{Educacion.institucion}}</p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="col  d-flex justify-content-end buttons-acc" *ngIf="isLogged">
+            <button class="add-button btn btn-link" type="button" routerLink="/editar-educacion/{{Educacion.id}}">
+                <i class="bi bi-pencil-square"></i>
+                <p class="m-0">Editar</p>
+            </button>
+            <button class="add-button btn btn-link" style="color: red;" type="button"
+                (click)="deleteEducacion(Educacion.id)">
+                <i class="bi bi-trash"></i>
+                <p class="m-0">Eliminar</p>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="container-fluid">
+    <div class="navbar row justify-content-around align-items-center">
+        <div class="col">
+            <app-logo-ap></app-logo-ap>
+        </div>
+        <div class="col d-flex justify-content-end ">
+            <app-social-icons></app-social-icons>
+            <button class="btn btn-primary" (click)="login()" *ngIf="!isLogged">INGRESAR</button>
+            <button class="btn btn-primary" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESIÓN</button>
+        </div>
+    </div>
+</div>

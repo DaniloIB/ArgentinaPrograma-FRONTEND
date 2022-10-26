@@ -1,0 +1,49 @@
+.container {
+  border-radius: .5rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button p {
+  font-weight: 500;
+}
+
+.card {
+  border-radius: 0.5rem;
+  min-height: 390px;
+  transition: box-shadow .2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.card-add {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 1s ease;
+}
+
+.card-add:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+a {
+  font-weight: 600;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  max-height: 41px;
+  margin: 0;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.add-button:hover {
+  background-color: #F5F6FA;
+}
+
+.add-button i {
+  margin-right: 0.5rem;
+}

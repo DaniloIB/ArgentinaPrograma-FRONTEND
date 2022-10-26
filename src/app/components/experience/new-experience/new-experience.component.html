@@ -1,0 +1,19 @@
+<div class="container my-4 p-5">
+  <h1>Sumar Experiencia</h1>
+  <form class="p-3" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+    <div class="mb-3">
+      <label for="empresa" class="form-label">Nombre de la Empresa</label>
+      <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="empresa" required>
+    </div>
+    <div class="mb-3">
+      <label for="puesto" class="form-label">Puesto</label>
+      <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="puesto" required>
+    </div>
+    <div class="form-floating">
+      <textarea style="height: 100px" class="form-control" placeholder="Responsabilidades" id="descripcion"
+        name="descripcion" [(ngModel)]="descripcion" required></textarea>
+      <label for="descripcion">Responsabilidades</label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-4">Agregar</button>
+  </form>
+</div>

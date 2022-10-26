@@ -1,0 +1,16 @@
+<div class="container my-4 p-5">
+  <h1>Sumar Educación</h1>
+  <form class="p-3" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+    <div class="mb-3">
+      <label for="institucion" class="form-label">Institución</label>
+      <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="institucion"
+        minlength="4" required>
+    </div>
+    <div class="mb-3">
+      <label for="nombreEducacion" class="form-label">Título / Carrera / Curso </label>
+      <input type="text" class="form-control" id="nombreEducacion" name="nombreEducacion" [(ngModel)]="nombreEducacion"
+        required="">
+    </div>
+    <button type="submit" class="btn btn-primary my-2">Agregar</button>
+  </form>
+</div>

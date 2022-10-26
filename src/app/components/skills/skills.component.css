@@ -1,0 +1,40 @@
+.container {
+   border-radius: .5rem;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+p {
+   font-weight: 500;
+}
+
+.card {
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+   transition: box-shadow 1s ease;
+}
+
+.card:hover {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.add-button {
+   display: flex;
+   align-items: center;
+   margin: 0;
+   font-size: 1.1rem;
+   text-decoration: none;
+}
+
+.add-button:hover {
+   background-color: #F5F6FA;
+}
+
+.add-button i {
+   margin-right: 0.5rem;
+}
+
+.progress {
+   height: 1.2rem;
+   font-size: 1rem;
+   padding: 0;
+}
