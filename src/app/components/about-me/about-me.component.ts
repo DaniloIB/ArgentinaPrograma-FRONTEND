@@ -30,7 +30,7 @@ export class AboutMeComponent implements OnInit {
   }
 
   cargarAbout():void{
-    this.sAboutService.detail(2).subscribe(
+    this.sAboutService.detail(3).subscribe(
       data => {this.about = data;}
     )
   }

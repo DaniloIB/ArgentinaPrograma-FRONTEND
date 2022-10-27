@@ -8,7 +8,7 @@ import { Educacion } from '../models/educacion.model';
 })
 export class SEducacionService {
 
-  eduURL = "http://localhost:8080/educacion/";
+  eduURL = "https://arg-programa-backend.herokuapp.com/educacion/";
 
   constructor( private httpClient:HttpClient  ) {}
 

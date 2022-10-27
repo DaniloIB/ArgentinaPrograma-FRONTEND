@@ -8,7 +8,7 @@ import { About } from '../models/about.model';
 })
 export class SAboutService {
 
-  eduURL = "http://localhost:8080/about/";
+  eduURL = "https://arg-programa-backend.herokuapp.com/about/";
 
   constructor( private httpClient:HttpClient  ) {}
 
