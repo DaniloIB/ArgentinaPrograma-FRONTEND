@@ -1,21 +1,23 @@
-<div class="container my-4 p-5">
-  <h1>Editar Experiencia</h1>
-  <form class="p-3" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-    <div class="mb-3">
-      <label for="empresa" class="form-label">Nombre de la Empresa</label>
-      <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="expLab.empresa" required>
-    </div>
-    <div class="mb-3">
-      <label for="puesto" class="form-label">Puesto</label>
-      <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="expLab.puesto" required>
-    </div>
-
-    <div class="mb-3">
-      <label for="descripcion" class="form-label">Responsabilidades</label>
-      <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="expLab.descripcion"
+<div class="container-dash">
+  <div class="container my-4 p-5">
+    <h1>Editar Experiencia</h1>
+    <form class="p-3" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+      <div class="mb-3">
+        <label for="empresa" class="form-label">Nombre de la Empresa</label>
+        <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="expLab.empresa" required>
+      </div>
+      <div class="mb-3">
+        <label for="puesto" class="form-label">Puesto</label>
+        <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="expLab.puesto" required>
+      </div>
+      
+      <div class="mb-3">
+        <label for="descripcion" class="form-label">Responsabilidades</label>
+        <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="expLab.descripcion"
         required>
-    </div>
-
-    <button type="submit" class="btn btn-primary mt-4">Actualizar</button>
-  </form>
+      </div>
+      
+      <button type="submit" class="btn btn-primary mt-4">Actualizar</button>
+    </form>
+  </div>
 </div>

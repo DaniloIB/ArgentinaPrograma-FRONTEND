@@ -4,7 +4,7 @@
 }
 
 .card {
-   height: 150px;
+   min-height: 120px;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
    transition: box-shadow 1s ease;
 }
@@ -13,7 +13,7 @@
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.add-button {
+.add-button, .edit-button {
    display: flex;
    align-items: center;
    margin: 0;
@@ -21,6 +21,7 @@
    text-decoration: none;
    font-weight: 500;
 }
+
 
 .add-button:hover {
    background-color: #F5F6FA;
@@ -45,16 +46,35 @@
 
 }
 
-.date {
-   font-size: 14px;
-   margin: 0;
-}
-
 .logo {
    padding: 0;
 }
 
 .logo img {
-   max-width: 70%;
-   max-height: 70%;
+   max-width: 50%;
+   max-height: 50%;
 }
+
+@media screen and (max-width: 768px) {
+   
+   div{
+      text-align: center;
+   }
+
+   .logo img {
+      max-width: 20%;
+      max-height: 20%;
+      margin-bottom: 15px;
+      margin-top: 15px;
+   }
+
+   .edit-button p{
+      display: none;
+   }
+
+   .add-button p{
+      font-size: 16px;
+   }
+
+   
+ }

@@ -42,8 +42,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   irproyecto(urlProyecto: string): void {
-    console.log("hago  clicks")
-    location.href = 'https://' + urlProyecto;
+    location.href = urlProyecto;
   }
 
 }

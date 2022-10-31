@@ -25,6 +25,7 @@ export class HeaderComponent implements OnInit {
   onLogOut():void{
     this.tokenService.logOut();
     this.ngOnInit();
+    window.location.reload()
     this.router.navigate(["/home"]);
 
   }

@@ -6,23 +6,28 @@
         </button>
     </div>
 
-    <div class="row card p-4 mt-5 flex-row align-items-center justify-content-center" *ngFor="let expe of experiencia">
-        <div class="logo d-flex justify-content-center col-1 col-xs-1 col-sm-1 col-md-1 col-lg-1">
+    <div class="row-container row card p-2 mt-4 flex-row align-items-center justify-content-start "
+        *ngFor="let expe of experiencia">
+
+        <div class="logo d-flex justify-content-center  col-md-2 col-lg-2">
             <img class="img-fluid" src="../../../assets/factory.png" alt="">
         </div>
 
-        <div class="col d-flex flex-column justify-content-around">
-            <h6 class="title text-uppercase">{{expe.empresa}}</h6>
-            <p class="subtitle">{{expe.puesto}}</p>
-            <p class="date">{{expe.descripcion}}</p>
+        <!-- title -->
+        <div class="col-md-9 col-lg-9 d-flex flex-column justify-content-around title-content">
+            <h6 class="py-1 title text-uppercase">{{expe.empresa}}</h6>
+            <p class="py-1 subtitle">{{expe.puesto}}</p>
+            <p class="py-1 subtitle body lh-base">{{expe.descripcion}}</p>
         </div>
 
-        <div class="col d-flex justify-content-end" *ngIf="isLogged">
-            <button class="add-button btn btn-link" type="button" routerLink="/editar-experiencia/{{expe.id}}">
+        <!-- Buttons -->
+        <div class="col d-flex justify-content-center buttons-acc" *ngIf="isLogged">
+            <button class="edit-button btn btn-link" type="button" routerLink="/editar-experiencia/{{expe.id}}">
                 <i class="bi bi-pencil-square"></i>
                 <p class="m-0">Editar</p>
             </button>
-            <button class="add-button btn btn-link" style="color: red;" type="button" (click)="deleteExp(expe.id)">
+            <button class="edit-button btn btn-link" style="color: red;" type="button"
+            (click)="deleteExp(expe.id)">
                 <i class="bi bi-trash"></i>
                 <p class="m-0">Eliminar</p>
             </button>

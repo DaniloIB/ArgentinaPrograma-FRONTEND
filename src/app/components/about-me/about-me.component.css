@@ -7,17 +7,32 @@
 }
 
 .about{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-left: 2px solid rgba(0,0,0,0.05);
+    border-left: 2px solid rgba(0,0,0,0.1);
 }
 
 
+
+h1{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+div .title{
+    color: #2DC2BD;
+}
+div .subtitle{
+    font-size: 12px;
+}
+
 img{
     margin-top: -100px;
-    height: 200px;
-    width: 200px;
+    max-height: 170px;
+    max-width: 170px;
     border: #fff 5px solid;
+}
+
+.social-icons{
+    margin: 0 auto;
 }
 
 .add-button {
@@ -38,14 +53,19 @@ img{
     margin-right: 0.5rem;
  }
 
+
+
 @media screen and (max-width: 992px) { 
 
     .about{
+        margin: 0 auto;
+        width: 80%;
         font-size: 14px;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         padding: 1rem;
-        border-top: 2px solid rgba(0,0,0,0.05);
+        border-top: 2px solid rgba(0,0,0,0.1);
+        border-left: 0;
         text-align: center;
 
     }

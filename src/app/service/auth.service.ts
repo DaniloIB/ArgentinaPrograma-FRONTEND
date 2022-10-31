@@ -10,6 +10,8 @@ import { NewUsuario } from '../models/new-usuario';
 })
 export class AuthService {
   authURL = "https://arg-programa-backend.herokuapp.com/auth/";
+  //authURL = "http://localhost:8080/auth/";
+
 
 
   constructor( private httpClient : HttpClient ) { }

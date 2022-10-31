@@ -12,3 +12,9 @@
 button{
     font-weight: 500;
 }
+
+@media screen and (max-width: 768px) {
+    button {
+        font-size: 12px;
+    }
+  }

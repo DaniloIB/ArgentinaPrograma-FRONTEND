@@ -4,7 +4,7 @@
 }
 
 .card {
-   height: 150px;
+   min-height: 120px;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
    transition: box-shadow 1s ease;
 }
@@ -13,14 +13,13 @@
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.add-button {
+.add-button, .edit-button {
    display: flex;
    align-items: center;
    margin: 0;
    font-size: 1.1rem;
    text-decoration: none;
    font-weight: 500;
-
 }
 
 .add-button:hover {
@@ -30,6 +29,8 @@
 .add-button i {
    margin-right: 0.5rem;
 }
+
+
 
 .title {
    font-size: 16px;
@@ -41,12 +42,10 @@
    font-size: 14px;
    color: rgb(155, 153, 153);
    margin-bottom: 3px;
-
 }
 
-.date {
-   font-size: 14px;
-   margin: 0;
+.body{
+   text-align: justify;
 }
 
 .logo {
@@ -54,6 +53,30 @@
 }
 
 .logo img {
-   max-width: 70%;
-   max-height: 70%;
+   max-width: 50%;
+   max-height: 50%;
 }
+
+@media screen and (max-width: 768px) {
+   
+   div{
+      text-align: center;
+   }
+
+   .logo img {
+      max-width: 20%;
+      max-height: 20%;
+      margin-bottom: 15px;
+      margin-top: 15px;
+   }
+
+   .edit-button p{
+      display: none;
+   }
+
+   .add-button p{
+      font-size: 16px;
+   }
+
+   
+ }

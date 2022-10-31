@@ -1,3 +1,6 @@
+*{
+    font-family: poppins;
+}
 .container-fluid {
     background-color: #F5F6FA;
     padding: 0;

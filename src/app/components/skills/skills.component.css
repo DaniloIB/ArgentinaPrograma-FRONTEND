@@ -1,3 +1,7 @@
+.container-dash{
+   height: 100vh;
+}
+
 .container {
    border-radius: .5rem;
    font-size: 16px;
@@ -38,3 +42,14 @@ p {
    font-size: 1rem;
    padding: 0;
 }
+
+@media screen and (max-width: 768px) {
+   
+   .add-button p{
+      font-size: 16px;
+   }
+
+   
+
+   
+ }

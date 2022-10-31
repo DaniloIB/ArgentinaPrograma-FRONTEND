@@ -1,5 +1,4 @@
 .container {
-  border-radius: .5rem;
   font-size: 16px;
   font-weight: 500;
 }
@@ -9,8 +8,8 @@ button p {
 }
 
 .card {
-  border-radius: 0.5rem;
-  min-height: 390px;
+  min-height: 450px;
+  max-width: 280px;
   transition: box-shadow .2s ease-in-out;
 }
 
@@ -18,14 +17,18 @@ button p {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
-.card-add {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 1s ease;
+.card .img-container{
+  min-height: 238px;
+  min-width: 238px;
 }
 
-.card-add:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+.card p{
+  font-size: 14px;
+  color: rgb(133, 133, 133);
 }
+
+
+
 
 a {
   font-weight: 600;
@@ -46,4 +49,12 @@ a {
 
 .add-button i {
   margin-right: 0.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+   
+  .add-button p{
+     font-size: 16px;
+  }  
 }

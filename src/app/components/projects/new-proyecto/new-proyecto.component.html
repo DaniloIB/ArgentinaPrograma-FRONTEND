@@ -1,6 +1,6 @@
 <div class="container my-4 p-5">
-  <h1>Sumar Proyecto</h1>
-  <form class="p-3" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+  <h1 class="mb-5">Sumar Proyecto</h1>
+  <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
     <div class="mb-3">
       <label for="nombreProyecto" class="form-label">Titulo de Proyecto</label>
       <input type="text" class="form-control" id="nombreProyecto" name="nombreProyecto" [(ngModel)]="nombreProyecto"
