@@ -3,10 +3,9 @@
         <div class="col-6">
             <app-logo-ap></app-logo-ap>
         </div>
-        <div class="col d-flex justify-content-end align-items-center ">
-            <!-- <app-social-icons></app-social-icons> -->
-            <button class="btn btn-primary " (click)="login()" *ngIf="!isLogged">INGRESAR</button>
-            <button class="btn btn-primary " (click)="onLogOut()" *ngIf="isLogged">CERRAR SESIÓN</button>
+        <div class="col d-flex justify-content-end align-items-center">
+            <button class="btn btn-primary border-2" (click)="onLogOut()" *ngIf="isLogged === true">Cerrar Sesión</button>
+            <button class="btn btn-primary border-2" (click)="login()" *ngIf="isLogged === false">Ingresar</button>
         </div>
     </div>
 </div>

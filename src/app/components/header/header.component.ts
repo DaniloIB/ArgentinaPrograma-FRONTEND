@@ -10,11 +10,14 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class HeaderComponent implements OnInit {
 
-  isLogged = false;
+  isLogged:boolean = false;
 
-  constructor( private router: Router, private tokenService : TokenService) { }
+  constructor( private router: Router, 
+               private tokenService : TokenService,
+               ) { }
 
   ngOnInit(): void {
+
     if(this.tokenService.getToken()){
       this.isLogged = true;
     }else{
@@ -25,12 +28,13 @@ export class HeaderComponent implements OnInit {
   onLogOut():void{
     this.tokenService.logOut();
     this.ngOnInit();
-    window.location.reload()
     this.router.navigate(["/home"]);
-
+    window.location.reload();
   }
-  
+
   login(){
+    this.isLogged = null;
     this.router.navigate(["/login"]);
   }
+
 }
