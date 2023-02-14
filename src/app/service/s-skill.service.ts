@@ -7,7 +7,7 @@ import { Skill } from '../models/skill.model';
   providedIn: 'root'
 })
 export class SSkillService {
-  skillURL= "https://arg-programa-backend.herokuapp.com/skill/";
+  skillURL= "https://portfolio-backend-daniloib.koyeb.app/skill/";
   //skillURL = "http://localhost:8080/skill/";
 
   constructor(private http: HttpClient) { }

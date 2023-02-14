@@ -9,7 +9,7 @@ import { NewUsuario } from '../models/new-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = "https://arg-programa-backend.herokuapp.com/auth/";
+  authURL = "https://portfolio-backend-daniloib.koyeb.app/auth/";
   //authURL = "http://localhost:8080/auth/";
 
 
